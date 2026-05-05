@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Tommy Coen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-name">Tommy Coen</a>
+        <div class="nav-links">
+            <a href="projects.html" class="active">Projects</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <h1 class="page-title">Projects</h1>
+
+        <!-- LEVIATHAN -->
+        <section class="project" id="leviathan">
+            <div class="project-header">
+                <div class="project-meta">
+                    <span class="project-year">2025</span>
+                    <span class="project-tag">FRC Robotics</span>
+                </div>
+                <h2>Leviathan</h2>
+                <p class="project-subtitle">BreakerBots 5104 — FIRST Robotics Competition, Reefscape</p>
+            </div>
+            <div class="project-body">
+                <div class="project-image-placeholder">
+                    <!-- Replace with: <img src="images/leviathan.webp" alt="Leviathan robot"> -->
+                    <div class="placeholder-box">Photo: Leviathan</div>
+                </div>
+                <div class="project-details">
+                    <p>
+                        Leviathan is a fully autonomous FRC robot capable of scoring on all four levels 
+                        of the reef. With 4 localization cameras, a ZED stereo camera, and 5 coprocessors, 
+                        it can operate almost entirely without human input — even during teleop.
+                    </p>
+                    <h4>Key Systems</h4>
+                    <ul>
+                        <li><strong>Vision & Localization</strong> — Real-time SLAM on Nvidia Jetson with 4x global shutter cameras on OPi 5 Pro coprocessors. Custom CUDA-accelerated stereo depth pipeline for 3D game piece tracking.</li>
+                        <li><strong>Elevator</strong> — Custom 3-stage cascade rigged elevator, 80" extension in under 1 second. Counter-balanced with constant force springs, 8 lb effective driven mass. 3D-printed gears.</li>
+                        <li><strong>Automation</strong> — Single-button scoring on any reef node, autonomous intake via stereo depth, full climb automation. Obstacle avoidance and motion path planning.</li>
+                        <li><strong>Climb</strong> — Polycarbonate grappling-hook with winch and spring deployment, mechanical lock release for foot extension.</li>
+                    </ul>
+                    <h4>Awards</h4>
+                    <ul>
+                        <li>Innovation in Control Award — Contra Costa Regional</li>
+                        <li>Industrial Design Award — NorCal Invitational</li>
+                        <li>Judges' Award — Pinnacles Regional</li>
+                        <li>Gracious Professionalism — San Francisco Regional</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/BreakerBots/Leviathan_2025" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://breakerbots.com/robots" target="_blank" rel="noopener">BreakerBots</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TYPHOON -->
+        <section class="project" id="typhoon">
+            <div class="project-header">
+                <div class="project-meta">
+                    <span class="project-year">2024</span>
+                    <span class="project-tag">FRC Robotics</span>
+                </div>
+                <h2>Typhoon</h2>
+                <p class="project-subtitle">BreakerBots 5104 — FIRST Robotics Competition, Crescendo</p>
+            </div>
+            <div class="project-body">
+                <div class="project-image-placeholder">
+                    <div class="placeholder-box">Photo: Typhoon</div>
+                </div>
+                <div class="project-details">
+                    <p>
+                        One of the team's most advanced and automated robots. Typhoon uses intelligent 
+                        two-button teleop controls — the robot decides what action to perform on its own — 
+                        along with ML-powered note tracking and multi-note autonomous routines.
+                    </p>
+                    <h4>Key Systems</h4>
+                    <ul>
+                        <li><strong>Shooter</strong> — PIDF-controlled pivot on 9:1 reduction with 3D-printed herringbone rack and pinion. Pre-tuned firing solution table for scoring from anywhere on the field.</li>
+                        <li><strong>Vision</strong> — 4x Arducam OV9281 on 2x OrangePi 5 running PhotonVision, fed to BreakerLib pose filtering and 200Hz multi-threaded Kalman odometry fusion. ML note pursuit via Limelight 3 with Google Coral.</li>
+                        <li><strong>Autonomous</strong> — 1-5 note autos with AD* replanning and AI note tracking/pursuit.</li>
+                        <li><strong>Drivetrain</strong> — SDS MK4i L3 swerve with Kraken drive motors.</li>
+                    </ul>
+                    <h4>Awards</h4>
+                    <ul>
+                        <li>Regional Finalists — Monterey Bay Regional</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/BreakerBots/Typhoon_2024" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2023 SEASON -->
+        <section class="project" id="charged-up">
+            <div class="project-header">
+                <div class="project-meta">
+                    <span class="project-year">2023</span>
+                    <span class="project-tag">FRC Robotics</span>
+                </div>
+                <h2>Kraken / Cthulhu / Plop</h2>
+                <p class="project-subtitle">BreakerBots 5104 — Charged Up season + off-season development</p>
+            </div>
+            <div class="project-body">
+                <div class="project-image-placeholder">
+                    <div class="placeholder-box">Photo: 2023 Robots</div>
+                </div>
+                <div class="project-details">
+                    <p>
+                        The 2023 season saw three distinct robots. Kraken — the team's first competition swerve 
+                        drive robot — featured a double-jointed arm with gas-shock suspension. Cthulhu was 
+                        designed and built in two weeks between regionals as an evolved design. Plop served as 
+                        an off-season development platform for next-gen technologies.
+                    </p>
+                    <h4>Highlights</h4>
+                    <ul>
+                        <li>First competition swerve drive robot for BreakerBots</li>
+                        <li>Quad-camera vision system with per-camera OrangePi coprocessors</li>
+                        <li>Custom BreakerLib pose filtering and odometry fusion</li>
+                        <li>Regional Finalists at Central Valley Regional</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/BreakerBots/Cthulhu_2023" target="_blank" rel="noopener">Cthulhu GitHub</a>
+                        <a href="https://github.com/BreakerBots/Plop_2023" target="_blank" rel="noopener">Plop GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHARYBDIS -->
+        <section class="project" id="charybdis">
+            <div class="project-header">
+                <div class="project-meta">
+                    <span class="project-year">2022</span>
+                    <span class="project-tag">FRC Robotics</span>
+                </div>
+                <h2>Charybdis</h2>
+                <p class="project-subtitle">BreakerBots 5104 — Rapid React</p>
+            </div>
+            <div class="project-body">
+                <div class="project-image-placeholder">
+                    <div class="placeholder-box">Photo: Charybdis</div>
+                </div>
+                <div class="project-details">
+                    <p>
+                        Averaged 9 cycles per match with a dual flywheel shooter at 6,000 RPM. 
+                        Featured a 4-bar linkage deployable intake, 18-flex-wheel indexer, and 
+                        telescoping climb to mid, high, and traverse rungs.
+                    </p>
+                    <h4>Awards</h4>
+                    <ul>
+                        <li>Excellence in Engineering Award — Monterey Bay Regional</li>
+                        <li>Regional Finalists — Monterey Bay Regional</li>
+                        <li>Second Seed Alliance Captain — Monterey Bay Regional</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/BreakerBots/RAPID_REACT_2022_CMD" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://a360.co/3s4GerA" target="_blank" rel="noopener">CAD</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MACHINING -->
+        <section class="project" id="machining">
+            <div class="project-header">
+                <div class="project-meta">
+                    <span class="project-year">2021–2024</span>
+                    <span class="project-tag">Manufacturing</span>
+                </div>
+                <h2>CNC Machining Portfolio</h2>
+                <p class="project-subtitle">CTE Engineering Pathway — Pacific Grove High School</p>
+            </div>
+            <div class="project-body">
+                <div class="project-image-placeholder">
+                    <div class="placeholder-box">Photo: Machined Parts</div>
+                </div>
+                <div class="project-details">
+                    <p>
+                        Completed the full CTE Engineering Pathway including manual and CNC machining. 
+                        Projects include multiple Titans of CNC program parts (1M, 2M, 3M), a ball-in-the-box 
+                        precision challenge, a Tesla Cybertruck model, and a custom super cart build.
+                    </p>
+                    <h4>Skills</h4>
+                    <ul>
+                        <li>Manual mill and lathe operation</li>
+                        <li>CNC programming and operation</li>
+                        <li>GD&T and precision measurement</li>
+                        <li>CAD/CAM workflow</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://sites.google.com/view/thomascoenengr/manufactured-parts" target="_blank" rel="noopener">Full Machining Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ATOMICHABITS -->
+        <section class="project" id="atomichabits">
+            <div class="project-header">
+                <div class="project-meta">
+                    <span class="project-year">2025</span>
+                    <span class="project-tag">Software</span>
+                </div>
+                <h2>AtomicHabits App</h2>
+                <p class="project-subtitle">Personal project — React / TypeScript / Vite</p>
+            </div>
+            <div class="project-body">
+                <div class="project-image-placeholder">
+                    <div class="placeholder-box">Screenshot: AtomicHabits</div>
+                </div>
+                <div class="project-details">
+                    <p>
+                        A custom-built habit and task tracker inspired by James Clear's Atomic Habits framework. 
+                        Features repeating tasks with "never miss twice" indicators, drag-and-drop reordering, 
+                        week-view navigation, reminder system, and a stats page with completion rate analytics.
+                    </p>
+                    <h4>Technical Details</h4>
+                    <ul>
+                        <li>React + TypeScript + Vite with localStorage persistence</li>
+                        <li>Natural language date parsing via chrono-node</li>
+                        <li>Repeat task system generating 365 future instances</li>
+                        <li>Drag-and-drop with order propagation across repeat groups</li>
+                        <li>Stats engine with normalized habit names and configurable thresholds</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- AERO CLUB -->
+        <section class="project" id="aero">
+            <div class="project-header">
+                <div class="project-meta">
+                    <span class="project-year">2025–present</span>
+                    <span class="project-tag">Duke</span>
+                </div>
+                <h2>Duke Aero Club</h2>
+                <p class="project-subtitle">Duke University</p>
+            </div>
+            <div class="project-body">
+                <div class="project-image-placeholder">
+                    <div class="placeholder-box">Photo: Aero Club</div>
+                </div>
+                <div class="project-details">
+                    <p>
+                        <!-- Update with your specific aero club work -->
+                        Active member of the Duke Aero Club. Details coming soon.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tommy Coen &middot; Duke ME '29</p>
+    </footer>
+</body>
+</html>
