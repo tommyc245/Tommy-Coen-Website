@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bark-itects — Tommy Coen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-name">Tommy Coen</a>
+        <div class="nav-links">
+            <a href="projects.html" class="active">Projects</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+        </div>
+    </nav>
+    <main class="page-content">
+        <a href="duke-coursework.html" class="back-link">← Duke Coursework</a>
+        <div class="detail-header">
+            <div class="project-meta"><span class="project-year">2025</span><span class="project-tag">EGR 101</span></div>
+            <h1>Bark-itects</h1>
+            <p class="project-subtitle">Wireless Alert System for a Diabetic Alert Dog — Duke University</p>
+        </div>
+        <div class="detail-images">
+            <div class="placeholder-box placeholder-tall">Poster photo — add to images/DukeCoursework/</div>
+        </div>
+        <div class="detail-body">
+            <div class="my-role">
+                <div class="my-role-label">My Role</div>
+                <p>4-person team. Did all CAD for the project and led assembly and iteration of the sensor/bringsel subsystem.</p>
+            </div>
+            <p>
+                Bark-itects is a wireless alert system built for a diabetic alert service dog. The dog wears an augmented bringsel — the pressure sensor the dog bites down on — with a sewn biothane exterior (the client suggested biothane; I specified and integrated it into the assembly). The handler wears a bracelet that vibrates via a motor mounted in the enclosure wall. I CAD'd and 3D printed both enclosures.
+            </p>
+            <p>
+                The two sides communicate over ESP-NOW using two Seeed XIAO ESP32C3 boards, with no phone or Wi-Fi dependency. Both interfaces run on a 3.7V 380mAh battery (electrical subsystem — not mine).
+            </p>
+            <p>
+                We went through 4 design revisions to tune the actuation threshold, solving two failure modes in sequence: the sensor not triggering on a real bite, and the sensor triggering too easily from routine dog movement.
+            </p>
+            <h4>Results vs. Requirements</h4>
+            <ul>
+                <li>Weight: 41g vs. &lt;317g target — pass</li>
+                <li>Transmission reliability: 91.67% over 100 trials</li>
+                <li>Battery life: 6.33 hr vs. 9 hr target — did not meet</li>
+                <li>Water resistance (IPX5-6): untested</li>
+                <li>Bite resistance: ~1 year, estimated from client experience</li>
+            </ul>
+            <h4>Awards</h4>
+            <ul>
+                <li>Innovation in Design Award — Duke University</li>
+            </ul>
+        </div>
+    </main>
+    <footer><p>Tommy Coen &middot; Duke ME '29</p></footer>
+</body>
+</html>
