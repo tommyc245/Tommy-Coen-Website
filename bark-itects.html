@@ -25,7 +25,11 @@
             <p class="project-subtitle">Wireless Alert System for a Diabetic Alert Dog — Duke University</p>
         </div>
         <div class="detail-images">
-            <div class="placeholder-box placeholder-tall">Poster photo — add to images/DukeCoursework/</div>
+            <img src="images/DukeCoursework/BarkitectsTeam.webp" alt="Team at the Duke Engineering Showcase with the Bark-itects poster" class="detail-img-main">
+            <div class="detail-img-row">
+                <img src="images/DukeCoursework/BarkitectsBringsel.webp" alt="Augmented bringsel — dog interface">
+                <img src="images/DukeCoursework/BarkitectsBracelet.webp" alt="Vibrating bracelet — handler interface">
+            </div>
         </div>
         <div class="detail-body">
             <div class="my-role">
@@ -33,13 +37,13 @@
                 <p>4-person team. Did all CAD for the project and led assembly and iteration of the sensor/bringsel subsystem.</p>
             </div>
             <p>
-                Bark-itects is a wireless alert system built for a diabetic alert service dog. The dog wears an augmented bringsel — the pressure sensor the dog bites down on — with a sewn biothane exterior (the client suggested biothane; I specified and integrated it into the assembly). The handler wears a bracelet that vibrates via a motor mounted in the enclosure wall. I CAD'd and 3D printed both enclosures.
+                Bark-itects is a wireless alert system for a diabetic alert service dog. The dog bites down on an augmented bringsel — a pressure sensor sewn into a biothane exterior (the client's idea; I specified and integrated the material). The handler wears a bracelet that vibrates through a motor mounted in the enclosure wall. I CAD'd and 3D printed both enclosures.
             </p>
             <p>
-                The two sides communicate over ESP-NOW using two Seeed XIAO ESP32C3 boards, with no phone or Wi-Fi dependency. Both interfaces run on a 3.7V 380mAh battery (electrical subsystem — not mine).
+                Comms run over ESP-NOW between two Seeed XIAO ESP32C3 boards — no phone, no Wi-Fi. Both sides run on a 3.7V 380mAh battery (electrical's subsystem, not mine).
             </p>
             <p>
-                We went through 4 design revisions to tune the actuation threshold, solving two failure modes in sequence: the sensor not triggering on a real bite, and the sensor triggering too easily from routine dog movement.
+                4 design revisions to get the actuation threshold right. First the sensor wouldn't trigger on a real bite. Fixed that, and it started triggering on ordinary dog movement. Fixed that too.
             </p>
             <h4>Results vs. Requirements</h4>
             <ul>
@@ -53,6 +57,12 @@
             <ul>
                 <li>Innovation in Design Award — Duke University</li>
             </ul>
+        </div>
+
+        <div class="detail-img-gallery">
+            <img src="images/DukeCoursework/BarkitectsEnclosure1.webp" alt="Bracelet enclosure open, showing battery and XIAO ESP32C3">
+            <img src="images/DukeCoursework/BarkitectsEnclosure2.webp" alt="Enclosure electronics closeup">
+            <img src="images/DukeCoursework/BarkitectsSensor.webp" alt="Pressure sensor strip and biothane exterior">
         </div>
     </main>
     <footer><p>Tommy Coen &middot; Duke ME '29</p></footer>
