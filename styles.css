@@ -20,8 +20,8 @@
     --space-xs: 0.5rem;
     --space-sm: 1rem;
     --space-md: 2rem;
-    --space-lg: 4rem;
-    --space-xl: 6rem;
+    --space-lg: 3.25rem;
+    --space-xl: 5rem;
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -44,7 +44,13 @@ nav {
     max-width: var(--max-width);
     margin: 0 auto;
     border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg);
 }
+
+#about, #projects { scroll-margin-top: 4.5rem; }
 
 .nav-name {
     font-family: var(--font-heading);
