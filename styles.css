@@ -444,6 +444,57 @@ footer p { font-size: 0.8rem; color: var(--text-muted); }
     .resume-embed iframe { height: 600px; }
 }
 
+/* ---- PILLS (category / project index links) ---- */
+.pill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: var(--space-lg);
+}
+
+.pill-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border: 1.5px solid var(--accent);
+    border-radius: 999px;
+    transition: all 0.2s;
+}
+
+.pill-link:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+.pill-count {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 0.05rem 0.45rem;
+    border-radius: 999px;
+    transition: all 0.2s;
+}
+
+.pill-link:hover .pill-count {
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+.pill-sub {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    opacity: 0.85;
+}
+
+.pill-link:hover .pill-sub { color: rgba(255, 255, 255, 0.8); }
+
 /* ---- PROJECT CARDS ---- */
 .card-grid {
     display: grid;
