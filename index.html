@@ -18,11 +18,11 @@
     <meta name="twitter:title" content="Tommy Coen — Mechanical Engineering">
     <meta name="twitter:description" content="Tommy Coen — Mechanical Engineering student at Duke University pursuing an Aerospace Engineering Certificate. Structures Lead at Duke Aero, FRC robotics, and CNC machining.">
     <meta name="twitter:image" content="https://tommyc245.github.io/Tommy-Coen-Website/images/Headshot.webp">
-    <meta name="theme-color" content="#003087">
-    <link rel="stylesheet" href="styles.css?v=3">
+    <meta name="theme-color" content="#012169">
+    <link rel="stylesheet" href="styles.css?v=4">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -41,111 +41,79 @@
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to content</a>
-    <nav>
-        <a href="index.html" class="nav-name">TC</a>
+    <nav class="topbar">
+        <a href="index.html" class="topbar-home"><img src="images/avatar.webp" alt="" width="20" height="20">Tommy Coen</a>
     </nav>
 
-    <main class="page-content" id="main">
+    <div class="cover"></div>
+
+    <main class="page-content page-home" id="main">
 
         <header class="intro" id="about">
+            <img src="images/avatar.webp" alt="Tommy Coen" class="intro-photo" width="125" height="125" fetchpriority="high">
             <h1>Tommy Coen</h1>
-            <div class="rule"></div>
+            <hr class="rule">
 
             <div class="intro-layout">
                 <div class="intro-text">
-                    <p class="intro-tagline">I'm a sophomore at Duke studying Mechanical Engineering</p>
+                    <h2 class="intro-tagline">I'm a sophomore at Duke studying Mechanical Engineering</h2>
                     <p>
-                        I'm Structures Lead on Duke Aero's rocketry team, responsible for the airframe and
-                        fin can on a 30k SRAD rocket and a bare-bones two-stage staging tester, both
-                        targeting IREC 2027. Before Duke I spent four years on FRC Team 5104, going from
-                        machinist to Co-Captain and CAD Lead, and came up through the Titans of CNC
-                        program in high school. I like designing parts I can actually make.
-                    </p>
-                    <p class="intro-meta">
-                        <strong>Duke University</strong> — B.S.E. Mechanical Engineering '29 &middot; Aerospace Engineering Certificate
+                        I'm pursuing the Aerospace Engineering Certificate and I'm Structures Lead on Duke
+                        Aero's rocketry team, where we're building a 30k SRAD rocket and a two-stage staging
+                        tester targeting IREC 2027. Before Duke, I spent four years on FRC Team 5104, going
+                        from machinist to Co-Captain and CAD Lead.
                     </p>
                 </div>
 
-                <aside class="intro-side">
-                    <img src="images/Headshot.webp" alt="Tommy Coen" class="intro-photo" loading="lazy" decoding="async">
-                    <div class="side-links">
-                        <a href="https://www.linkedin.com/in/thomas-coen-35300b353/" target="_blank" rel="noopener">LinkedIn &rarr;</a>
-                        <a href="resume.html">Resume &rarr;</a>
-                    </div>
-                </aside>
+                <ul class="side-links">
+                    <li><a href="https://www.linkedin.com/in/thomas-coen-35300b353/" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#0A66C2" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn →</a></li>
+                    <li><a href="resume.html"><span class="link-icon" aria-hidden="true">📝</span>Resume →</a></li>
+                </ul>
             </div>
         </header>
 
         <section id="projects">
             <h2 class="section-head">My Work</h2>
+            <hr class="rule">
 
-            <div class="work-grid">
-                <a href="aero.html" class="work-card">
-                    <div class="work-thumb">
-                        <img src="images/thumbs/DevilsAdvocateLiftoff.webp" alt="Duke Aero" loading="lazy" decoding="async" width="560" height="314">
-                    </div>
-                    <div class="work-body">
-                        <p class="work-title">Duke Aero <span class="work-count">3</span></p>
-                        <p class="work-sub">Structures Lead — 30k SRAD rocket and staging tester for IREC 2027</p>
-                        <div class="work-tags">
-                            <span class="tag">Structures</span>
-                            <span class="tag tag-alt">Propulsion</span>
-                        </div>
+            <div class="gallery">
+                <a href="aero.html" class="card">
+                    <img class="card-img" src="images/thumbs/DevilsAdvocateLiftoff.webp" alt="Devil's Advocate lifting off" loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <p class="card-title"><span class="card-icon" aria-hidden="true">🚀</span>Duke Aero</p>
+                        <div class="pills"><span class="pill pill-red">3 projects</span></div>
                     </div>
                 </a>
 
-                <a href="frc.html" class="work-card">
-                    <div class="work-thumb">
-                        <img src="images/thumbs/Leviathan.webp" alt="FRC Robotics" loading="lazy" decoding="async" width="560" height="314">
-                    </div>
-                    <div class="work-body">
-                        <p class="work-title">FRC Robotics <span class="work-count">5</span></p>
-                        <p class="work-sub">Four years on Team 5104, machinist to Co-Captain</p>
-                        <div class="work-tags">
-                            <span class="tag">CAD</span>
-                            <span class="tag tag-alt">Team Lead</span>
-                        </div>
+                <a href="frc.html" class="card">
+                    <img class="card-img" src="images/thumbs/Leviathan.webp" alt="Leviathan robot" loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <p class="card-title"><span class="card-icon" aria-hidden="true">🤖</span>FRC Robotics</p>
+                        <div class="pills"><span class="pill pill-blue">5 projects</span></div>
                     </div>
                 </a>
 
-                <a href="cnc.html" class="work-card">
-                    <div class="work-thumb">
-                        <img src="images/CNCWork/BallInBox.webp" alt="CNC and Manufacturing" loading="lazy" decoding="async" width="560" height="314">
-                    </div>
-                    <div class="work-body">
-                        <p class="work-title">CNC &amp; Manufacturing <span class="work-count">7</span></p>
-                        <p class="work-sub">CTE Engineering Pathway and the Titans of CNC program</p>
-                        <div class="work-tags">
-                            <span class="tag">CNC Mill</span>
-                            <span class="tag tag-alt">CAM</span>
-                        </div>
+                <a href="cnc.html" class="card">
+                    <img class="card-img" src="images/CNCWork/BallInBox.webp" alt="Ball In The Box part" loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <p class="card-title"><span class="card-icon" aria-hidden="true">🛠️</span>CNC &amp; Manufacturing</p>
+                        <div class="pills"><span class="pill pill-gray">7 projects</span></div>
                     </div>
                 </a>
 
-                <a href="duke-coursework.html" class="work-card">
-                    <div class="work-thumb">
-                        <img src="images/thumbs/SportBotFullV3.webp" alt="Duke Coursework" loading="lazy" decoding="async" width="560" height="314">
-                    </div>
-                    <div class="work-body">
-                        <p class="work-title">Duke Coursework <span class="work-count">3</span></p>
-                        <p class="work-sub">Team design projects from EGR 101 and EGR 121</p>
-                        <div class="work-tags">
-                            <span class="tag">CAD</span>
-                            <span class="tag tag-alt">Team Project</span>
-                        </div>
+                <a href="duke-coursework.html" class="card">
+                    <img class="card-img" src="images/thumbs/SportBotFullV3.webp" alt="SportBot" loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <p class="card-title"><span class="card-icon" aria-hidden="true">🎓</span>Duke Coursework</p>
+                        <div class="pills"><span class="pill pill-yellow">3 projects</span></div>
                     </div>
                 </a>
 
-                <a href="personal-projects.html" class="work-card">
-                    <div class="work-thumb work-thumb-blank">
-                        <span>Personal</span>
-                    </div>
-                    <div class="work-body">
-                        <p class="work-title">Personal Projects <span class="work-count">1</span></p>
-                        <p class="work-sub">Software and side builds outside of class and team work</p>
-                        <div class="work-tags">
-                            <span class="tag">Web App</span>
-                        </div>
+                <a href="personal-projects.html" class="card">
+                    <div class="card-img card-img-blank" aria-hidden="true">💻</div>
+                    <div class="card-body">
+                        <p class="card-title"><span class="card-icon" aria-hidden="true">💻</span>Personal Projects</p>
+                        <div class="pills"><span class="pill pill-purple">1 project</span></div>
                     </div>
                 </a>
             </div>
