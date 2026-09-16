@@ -32,68 +32,113 @@
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-layout">
-            <div class="hero-content">
-                <p class="hero-label">Mechanical Engineering · Duke University</p>
-                <h1>Tommy Coen</h1>
-                <p class="hero-sub">Structures Lead at Duke Aero, building a 30k SRAD rocket for IREC 2027.</p>
-                <p class="hero-desc">
-                    Four years building competition robots on FRC Team 5104, now studying ME at Duke
-                    and working on Duke Aero's rocketry team.
-                </p>
-                <div class="hero-links">
-                    <a href="https://www.linkedin.com/in/thomas-coen-35300b353/" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="#projects">Projects</a>
-                    <a href="resume.html">Resume</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/Headshot.webp" alt="Tommy Coen">
-            </div>
-        </div>
-    </section>
-
     <main class="page-content">
 
-        <section id="about">
-            <h1 class="page-title">About</h1>
-            <div class="about-text">
-                <p>
-                    I'm a sophomore studying Mechanical Engineering at Duke University, pursuing an
-                    Aerospace Engineering Certificate alongside my degree. I'm currently Structures
-                    Lead for Duke Aero's next vehicles — a 30k SRAD rocket and a bare-bones two-stage
-                    staging tester rocket, both targeting IREC 2027 — building on Devil's Advocate,
-                    which placed 3rd in the 30,000 ft SRAD category at IREC 2026.
-                </p>
-                <p>
-                    I grew up in Pacific Grove, California, and spent four years on FRC Team 5104 (the
-                    BreakerBots), progressing from machinist to Co-Captain and CAD Lead across
-                    Charybdis, Kraken/Cthulhu, Typhoon, and Leviathan. I also completed the CTE
-                    Engineering Pathway in high school, going through the Titans of CNC program and
-                    building hands-on experience with manual machining and CNC equipment from scratch.
-                </p>
+        <header class="intro" id="about">
+            <h1>Tommy Coen</h1>
+            <div class="rule"></div>
 
-                <h3>Education</h3>
-                <div class="education-item">
-                    <strong>Duke University</strong> — B.S.E. Mechanical Engineering (expected 2029), Aerospace Engineering Certificate
+            <div class="intro-layout">
+                <div class="intro-text">
+                    <p class="intro-tagline">I'm a sophomore at Duke studying Mechanical Engineering</p>
+                    <p>
+                        I'm Structures Lead on Duke Aero's rocketry team, responsible for the airframe and
+                        fin can on a 30k SRAD rocket and a bare-bones two-stage staging tester, both
+                        targeting IREC 2027. Before Duke I spent four years on FRC Team 5104, going from
+                        machinist to Co-Captain and CAD Lead, and came up through the Titans of CNC
+                        program in high school. I like designing parts I can actually make.
+                    </p>
+                    <p class="intro-meta">
+                        <strong>Duke University</strong> — B.S.E. Mechanical Engineering '29 &middot; Aerospace Engineering Certificate
+                    </p>
                 </div>
-                <div class="education-item">
-                    <strong>Pacific Grove High School</strong> — CTE Engineering Pathway, Class of 2025
-                </div>
+
+                <aside class="intro-side">
+                    <img src="images/Headshot.webp" alt="Tommy Coen" class="intro-photo">
+                    <div class="side-links">
+                        <a href="https://www.linkedin.com/in/thomas-coen-35300b353/" target="_blank" rel="noopener">LinkedIn &rarr;</a>
+                        <a href="resume.html">Resume &rarr;</a>
+                    </div>
+                </aside>
             </div>
-        </section>
+        </header>
 
         <section id="projects">
-            <h1 class="page-title">Projects</h1>
-            <p class="category-desc">Pick a category to see the projects in it.</p>
+            <h2 class="section-head">My Work</h2>
 
-            <div class="pill-grid">
-                <a href="aero.html" class="pill-link">Duke Aero <span class="pill-count">3</span></a>
-                <a href="frc.html" class="pill-link">FRC Robotics <span class="pill-count">5</span></a>
-                <a href="cnc.html" class="pill-link">CNC &amp; Manufacturing <span class="pill-count">7</span></a>
-                <a href="duke-coursework.html" class="pill-link">Duke Coursework <span class="pill-count">3</span></a>
-                <a href="personal-projects.html" class="pill-link">Personal Projects <span class="pill-count">1</span></a>
+            <div class="work-grid">
+                <a href="aero.html" class="work-card">
+                    <div class="work-thumb">
+                        <img src="images/DukeAero/DevilsAdvocateLiftoff.webp" alt="Duke Aero">
+                    </div>
+                    <div class="work-body">
+                        <p class="work-title">Duke Aero <span class="work-count">3</span></p>
+                        <p class="work-sub">Structures Lead — 30k SRAD rocket and staging tester for IREC 2027</p>
+                        <div class="work-tags">
+                            <span class="tag">Structures</span>
+                            <span class="tag">Composites</span>
+                            <span class="tag tag-alt">Propulsion</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="frc.html" class="work-card">
+                    <div class="work-thumb">
+                        <img src="images/FRC/Leviathan.webp" alt="FRC Robotics">
+                    </div>
+                    <div class="work-body">
+                        <p class="work-title">FRC Robotics <span class="work-count">5</span></p>
+                        <p class="work-sub">Four years on Team 5104 — machinist to Co-Captain and CAD Lead</p>
+                        <div class="work-tags">
+                            <span class="tag">CAD</span>
+                            <span class="tag">Manufacturing</span>
+                            <span class="tag tag-alt">Team Lead</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="cnc.html" class="work-card">
+                    <div class="work-thumb">
+                        <img src="images/CNCWork/BallInBox.webp" alt="CNC and Manufacturing">
+                    </div>
+                    <div class="work-body">
+                        <p class="work-title">CNC &amp; Manufacturing <span class="work-count">7</span></p>
+                        <p class="work-sub">CTE Engineering Pathway and the Titans of CNC program</p>
+                        <div class="work-tags">
+                            <span class="tag">CNC Mill</span>
+                            <span class="tag">CNC Lathe</span>
+                            <span class="tag tag-alt">CAM</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="duke-coursework.html" class="work-card">
+                    <div class="work-thumb">
+                        <img src="images/DukeCoursework/SportBotFullV3.webp" alt="Duke Coursework">
+                    </div>
+                    <div class="work-body">
+                        <p class="work-title">Duke Coursework <span class="work-count">3</span></p>
+                        <p class="work-sub">Team design projects from EGR 101 and EGR 121</p>
+                        <div class="work-tags">
+                            <span class="tag">CAD</span>
+                            <span class="tag">Prototyping</span>
+                            <span class="tag tag-alt">Team Project</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="personal-projects.html" class="work-card">
+                    <div class="work-thumb work-thumb-blank">
+                        <span>Personal</span>
+                    </div>
+                    <div class="work-body">
+                        <p class="work-title">Personal Projects <span class="work-count">1</span></p>
+                        <p class="work-sub">Software and side builds outside of class and team work</p>
+                        <div class="work-tags">
+                            <span class="tag">Web App</span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </section>
 
