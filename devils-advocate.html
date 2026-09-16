@@ -18,21 +18,24 @@
     <meta name="twitter:title" content="Devil's Advocate — Tommy Coen">
     <meta name="twitter:description" content="Devil's Advocate — Duke Aero's 3rd 30k-SRAD rocket, flew at IREC 2026. Solid propulsion and structures work.">
     <meta name="twitter:image" content="https://tommyc245.github.io/Tommy-Coen-Website/images/DukeAero/DevilsAdvocateLiftoff.webp">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#003087">
+    <link rel="stylesheet" href="styles.css?v=2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <nav>
         <a href="index.html" class="nav-name">TC</a>
         <div class="nav-links">
             <a href="index.html#about">About</a>
-            <a href="index.html#projects" class="active">Projects</a>
+            <a href="index.html#projects" class="active" aria-current="page">Projects</a>
             <a href="resume.html">Resume</a>
         </div>
     </nav>
 
-    <main class="page-content">
+    <main class="page-content" id="main">
         <a href="aero.html" class="back-link">← Duke Aero Club</a>
         <div class="detail-header">
             <div class="project-meta">
@@ -44,10 +47,10 @@
         </div>
 
         <div class="detail-images">
-            <img src="images/DukeAero/DevilsAdvocateLiftoff.webp" alt="Devil's Advocate — liftoff at IREC 2026" class="detail-img-main">
+            <img src="images/DukeAero/DevilsAdvocateLiftoff.webp" alt="Devil's Advocate — liftoff at IREC 2026" class="detail-img-main" fetchpriority="high">
             <div class="detail-img-row">
-                <img src="images/DukeAero/DevilsAdvocateTeam.webp" alt="Team with Devil's Advocate at IREC 2026">
-                <img src="images/DukeAero/DevilsAdvocateOnRail.webp" alt="Devil's Advocate on the rail before launch">
+                <img src="images/DukeAero/DevilsAdvocateTeam.webp" alt="Team with Devil's Advocate at IREC 2026" loading="lazy" decoding="async">
+                <img src="images/DukeAero/DevilsAdvocateOnRail.webp" alt="Devil's Advocate on the rail before launch" loading="lazy" decoding="async">
             </div>
         </div>
 
@@ -80,10 +83,10 @@
         </div>
 
         <div class="detail-img-gallery">
-            <img src="images/DukeAero/NozzleCase.webp" alt="Nozzle casing on lathe">
-            <img src="images/DukeAero/SHFSetup.webp" alt="Static hot fire setup">
-            <img src="images/DukeAero/CanardsHousing.webp" alt="Canards housing">
-            <img src="images/DukeAero/StaticHotFireBurnV2.webp" alt="Static hot fire test — Duke-blue flame" style="object-fit: contain; background: #7d97a8;">
+            <img src="images/DukeAero/NozzleCase.webp" alt="Nozzle casing on lathe" loading="lazy" decoding="async">
+            <img src="images/DukeAero/SHFSetup.webp" alt="Static hot fire setup" loading="lazy" decoding="async">
+            <img src="images/DukeAero/CanardsHousing.webp" alt="Canards housing" loading="lazy" decoding="async">
+            <img src="images/DukeAero/StaticHotFireBurnV2.webp" alt="Static hot fire test — Duke-blue flame" style="object-fit: contain; background: #7d97a8;" loading="lazy" decoding="async">
         </div>
 
     </main>

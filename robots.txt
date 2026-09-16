@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tommyc245.github.io/Tommy-Coen-Website/sitemap.xml
