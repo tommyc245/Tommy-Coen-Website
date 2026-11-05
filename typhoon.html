@@ -14,20 +14,26 @@
     <meta property="og:description" content="Typhoon — BreakerBots 5104's 2024 FRC robot for Crescendo. Co-Captain and Manufacturing Lead.">
     <meta property="og:url" content="https://tommyc245.github.io/Tommy-Coen-Website/typhoon.html">
     <meta property="og:image" content="https://tommyc245.github.io/Tommy-Coen-Website/images/FRC/Typhoon.webp">
+    <meta property="og:image:width" content="1600">
+    <meta property="og:image:height" content="1473">
+    <meta property="og:image:alt" content="Typhoon — Tommy Coen">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Typhoon — Tommy Coen">
     <meta name="twitter:description" content="Typhoon — BreakerBots 5104's 2024 FRC robot for Crescendo. Co-Captain and Manufacturing Lead.">
     <meta name="twitter:image" content="https://tommyc245.github.io/Tommy-Coen-Website/images/FRC/Typhoon.webp">
     <meta name="theme-color" content="#012169">
-    <link rel="stylesheet" href="styles.css?v=6">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to content</a>
-    <nav class="topbar">
+    <nav class="topbar" aria-label="Main navigation">
         <a href="index.html" class="topbar-home"><img src="images/avatar-40.png" alt="" width="20" height="20" loading="lazy" decoding="async">Tommy Coen</a>
+        <div class="topbar-links">
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#about">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="mailto:thomas.coen@duke.edu">Email</a>
+        </div>
     </nav>
     <main class="page-content" id="main">
         <a href="frc.html" class="back-link">← FRC Robotics</a>
@@ -36,15 +42,23 @@
             <h1>Typhoon</h1>
             <p class="project-subtitle">FIRST Robotics Competition — Crescendo</p>
         </div>
-        <div class="detail-images">
-            <img src="images/FRC/Typhoon.webp" alt="Typhoon" class="detail-img-main" fetchpriority="high" width="1600" height="1473">
-        </div>
         <div class="detail-body">
             <div class="my-role">
                 <div class="my-role-label">My Role</div>
                 <p>Co-Captain, Manufacturing Lead, Drive Coach. Designed, CAD'd, and machined the intake pivot and intake, solving three constraints at once: packaging within the frame perimeter, minimizing backlash in the pivot, and keeping the intake light enough for the pivot's gear ratio to actuate it. CAM'd and machined a large share of the robot's structural parts. Grew the manufacturing subteam to 15+ capable machinists. Led all technical meetings and robot assembly, and coordinated pre-match and in-match strategy alongside the alliance's other two drive coaches.</p>
             </div>
-            <p>Typhoon runs on SDS swerve drive. The team built intelligent two-button teleop controls, where the robot decides what action to perform autonomously, plus ML-powered note tracking and multi-note autonomous routines, making it one of the team's most capable competition robots. Midseason, the amp mechanism was redesigned: the practice amp in the shop was built from a different material than the competition field's amp, so shots that worked in the shop missed at competition. The new version also let the robot fit under the stage and the chain.</p>
+        </div>
+        <div class="detail-images">
+            <img src="images/FRC/Typhoon.webp" alt="Typhoon" class="detail-img-main" fetchpriority="high" width="1600" height="1473">
+        </div>
+        <div class="detail-body">
+
+            <h2>Design constraints</h2>
+            <p>I designed and machined the intake pivot and intake around three constraints: fit within the frame perimeter, limit pivot backlash, and keep the intake light enough for the pivot's gear ratio to move it.</p>
+            <h2>Team iteration</h2>
+            <p>The practice amp used a different material from the competition field's amp. Shots that worked in the shop missed at competition, so the team redesigned the amp mechanism midseason. The new mechanism also let the robot fit under the stage and chain.</p>
+            <h2>Robot systems</h2>
+            <p>The team's robot used SDS swerve drive, two-button teleop controls, ML-powered note tracking, and multi-note autonomous routines. These were team systems; my work focused on mechanical design, manufacturing, assembly, and drive coaching.</p>
             <h2>Awards</h2>
             <ul>
                 <li>Regional Finalist — Monterey Bay Regional</li>

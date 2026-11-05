@@ -14,20 +14,26 @@
     <meta property="og:description" content="Ball In The Box — a CNC-milled part with spherical faces, machined during the CTE Engineering Pathway.">
     <meta property="og:url" content="https://tommyc245.github.io/Tommy-Coen-Website/ball-in-box.html">
     <meta property="og:image" content="https://tommyc245.github.io/Tommy-Coen-Website/images/CNCWork/BallInBox.webp">
+    <meta property="og:image:width" content="374">
+    <meta property="og:image:height" content="497">
+    <meta property="og:image:alt" content="Ball In The Box — Tommy Coen">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ball In The Box — Tommy Coen">
     <meta name="twitter:description" content="Ball In The Box — a CNC-milled part with spherical faces, machined during the CTE Engineering Pathway.">
     <meta name="twitter:image" content="https://tommyc245.github.io/Tommy-Coen-Website/images/CNCWork/BallInBox.webp">
     <meta name="theme-color" content="#012169">
-    <link rel="stylesheet" href="styles.css?v=6">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to content</a>
-    <nav class="topbar">
+    <nav class="topbar" aria-label="Main navigation">
         <a href="index.html" class="topbar-home"><img src="images/avatar-40.png" alt="" width="20" height="20" loading="lazy" decoding="async">Tommy Coen</a>
+        <div class="topbar-links">
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#about">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="mailto:thomas.coen@duke.edu">Email</a>
+        </div>
     </nav>
     <main class="page-content" id="main">
         <a href="cnc.html" class="back-link">← CNC & Manufacturing</a>
@@ -35,6 +41,12 @@
             <div class="project-meta"><span class="project-year">2022</span><span class="project-tag">CNC Mill</span></div>
             <h1>Ball In The Box</h1>
             <p class="project-subtitle">CTE Engineering Pathway — Pacific Grove High School</p>
+        </div>
+        <div class="detail-body">
+            <div class="my-role">
+                <div class="my-role-label">My Role</div>
+                <p>CAD and CAM in Fusion 360, and CNC machining.</p>
+            </div>
         </div>
         <div class="detail-images">
             <img src="images/CNCWork/BallInBox.webp" alt="Ball In The Box — finished part" class="detail-img-main image-native" fetchpriority="high" width="374" height="497">
@@ -44,11 +56,13 @@
             </div>
         </div>
         <div class="detail-body">
-            <div class="my-role">
-                <div class="my-role-label">My Role</div>
-                <p>CAD and CAM in Fusion 360, and CNC machining.</p>
-            </div>
-            <p>My first attempt at a CNC part with spherical faces. Machined on a Tormach 1100MX CNC mill. To cut most of the material I used an endmill, then smoothed the spherical surfaces with a ball-end mill. The main challenge was dialing in speeds and feeds: the original aluminum stock was too aggressive, so I switched to plywood, though the wood grain caused some splintering on certain faces. Next time I'd use a different vise setup to grip the part more securely.</p>
+
+            <h2>Constraint</h2>
+            <p>Machine spherical faces on a Tormach 1100MX CNC mill. I used an endmill for roughing and a ball-end mill for the curved surfaces.</p>
+            <h2>Failure &amp; iteration</h2>
+            <p>The original feeds were too aggressive for the aluminum stock, so I switched to plywood. The wood grain then caused splintering on some faces.</p>
+            <h2>What I would change</h2>
+            <p>I would use a different vise setup to hold the part more securely. This is a proposed change, not a tested fix.</p>
             <h2>Process</h2>
             <ul>
                 <li>CAD modeled in Fusion 360</li>

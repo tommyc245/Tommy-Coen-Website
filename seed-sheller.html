@@ -14,20 +14,26 @@
     <meta property="og:description" content="Seed Sheller — a roller-based sunflower seed sheller built for Duke EGR 121.">
     <meta property="og:url" content="https://tommyc245.github.io/Tommy-Coen-Website/seed-sheller.html">
     <meta property="og:image" content="https://tommyc245.github.io/Tommy-Coen-Website/images/DukeCoursework/SeedShellerAssembly.webp">
+    <meta property="og:image:width" content="1600">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:alt" content="Seed Sheller — Tommy Coen">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Seed Sheller — Tommy Coen">
     <meta name="twitter:description" content="Seed Sheller — a roller-based sunflower seed sheller built for Duke EGR 121.">
     <meta name="twitter:image" content="https://tommyc245.github.io/Tommy-Coen-Website/images/DukeCoursework/SeedShellerAssembly.webp">
     <meta name="theme-color" content="#012169">
-    <link rel="stylesheet" href="styles.css?v=6">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to content</a>
-    <nav class="topbar">
+    <nav class="topbar" aria-label="Main navigation">
         <a href="index.html" class="topbar-home"><img src="images/avatar-40.png" alt="" width="20" height="20" loading="lazy" decoding="async">Tommy Coen</a>
+        <div class="topbar-links">
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#about">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="mailto:thomas.coen@duke.edu">Email</a>
+        </div>
     </nav>
     <main class="page-content" id="main">
         <a href="duke-coursework.html" class="back-link">← Duke Coursework</a>
@@ -36,21 +42,25 @@
             <h1>Seed Sheller</h1>
             <p class="project-subtitle">Roller-Based Sunflower Seed Sheller — Duke University</p>
         </div>
-        <div class="detail-images">
-            <img src="images/DukeCoursework/SeedShellerAssembly.webp" alt="Assembled roller and drive mechanism" class="detail-img-main" fetchpriority="high" width="1600" height="1200">
-            <img src="images/DukeCoursework/SeedShellerParts.webp" alt="Machined and 3D printed components before assembly" class="detail-img-main" loading="lazy" decoding="async" width="1200" height="1600">
-        </div>
         <div class="detail-body">
             <div class="my-role">
                 <div class="my-role-label">My Role</div>
                 <p>4-person team. Designed the rollers, drive mechanism, and funnel, and did all CAD for the project.</p>
             </div>
-            <p>
-                A roller-based sunflower seed sheller: crack the shell, keep the kernel whole. The funnel was the easy part; it just has to feed seeds into the rollers one at a time. The hard part was the rollers: getting the geometry right so each seed cracks along its seam instead of getting crushed at random. Took several iterations to land on a roller design that did that consistently.
-            </p>
+        </div>
+        <div class="detail-images">
+            <img src="images/DukeCoursework/SeedShellerAssembly.webp" alt="Assembled roller and drive mechanism" class="detail-img-main" fetchpriority="high" width="1600" height="1200">
+            <img src="images/DukeCoursework/SeedShellerParts.webp" alt="Machined and 3D printed components before assembly" class="detail-img-main" loading="lazy" decoding="async" width="1200" height="1600">
+        </div>
+        <div class="detail-body">
+
+            <h2>Constraint</h2>
+            <p>Crack the shell while keeping the kernel intact. The rollers had to split each seed along its seam instead of crushing it; the funnel had to feed seeds into the rollers one at a time.</p>
+            <h2>Iteration</h2>
+            <p>I iterated the roller geometry to reduce kernel damage. My work covered the rollers, drive mechanism, funnel, and all CAD for our four-person team.</p>
             <h2>Results</h2>
             <ul>
-                <li>41 intact kernels in a 3-minute run — top score of 8 teams on a yield-minus-waste metric, and 2nd among all first-year mechanical engineering teams</li>
+                <li>Our team produced 41 intact kernels in 3 minutes: top score among 8 teams in our section on a yield-minus-waste metric, and 2nd among all first-year mechanical engineering teams</li>
             </ul>
         </div>
         <nav class="project-nav" aria-label="More projects">
