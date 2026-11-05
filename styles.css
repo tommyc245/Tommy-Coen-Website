@@ -206,8 +206,6 @@ img { display: block; max-width: 100%; }
 .my-role { padding: 14px 16px; margin-bottom: 18px; border-left: 3px solid var(--accent); }
 .my-role-label { margin-bottom: 4px; color: var(--accent); font-size: 13px; font-weight: 700; }
 .my-role p { margin-bottom: 0; }
-.placeholder-box { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 220px; border: 1px solid #000000; font-size: 14px; }
-.placeholder-tall { min-height: 340px; }
 .project-overview { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 28px; align-items: start; margin: 24px 0 32px; }
 .project-photo { min-width: 0; }
 .project-photo a { display: block; }
@@ -268,3 +266,11 @@ footer p { font-size: 13px; }
     html { scroll-behavior: auto; }
     *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
+
+/* Project photos retain their original resolution when opened. */
+.detail-images a, .detail-img-gallery a { display: block; cursor: zoom-in; }
+.detail-images figure { min-width: 0; }
+.detail-images > figure { margin-bottom: 16px; }
+.detail-img-row figure, .detail-img-gallery figure { min-width: 0; }
+.detail-img-gallery figcaption, .detail-img-row figcaption { margin-bottom: 12px; }
+.project-status { margin: 16px 0 28px; font-size: 16px; }
