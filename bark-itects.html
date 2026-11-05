@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bark-itects — Tommy Coen</title>
-    <meta name="description" content="Bark-itects — a wireless alert system for a diabetic alert service dog, built for Duke EGR 101.">
+    <title>Bark-itects: Tommy Coen</title>
+    <meta name="description" content="Bark-itects: a wireless alert system for a diabetic alert service dog, built for Duke EGR 101.">
     <link rel="canonical" href="https://tommyc245.github.io/Tommy-Coen-Website/bark-itects.html">
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Bark-itects — Tommy Coen">
-    <meta property="og:description" content="Bark-itects — a wireless alert system for a diabetic alert service dog, built for Duke EGR 101.">
+    <meta property="og:title" content="Bark-itects: Tommy Coen">
+    <meta property="og:description" content="Bark-itects: a wireless alert system for a diabetic alert service dog, built for Duke EGR 101.">
     <meta property="og:url" content="https://tommyc245.github.io/Tommy-Coen-Website/bark-itects.html">
     <meta property="og:image" content="https://tommyc245.github.io/Tommy-Coen-Website/images/DukeCoursework/BarkitectsTeam.webp">
     <meta property="og:image:width" content="1600">
     <meta property="og:image:height" content="1200">
-    <meta property="og:image:alt" content="Bark-itects — Tommy Coen">
+    <meta property="og:image:alt" content="Bark-itects: Tommy Coen">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Bark-itects — Tommy Coen">
-    <meta name="twitter:description" content="Bark-itects — a wireless alert system for a diabetic alert service dog, built for Duke EGR 101.">
+    <meta name="twitter:title" content="Bark-itects: Tommy Coen">
+    <meta name="twitter:description" content="Bark-itects: a wireless alert system for a diabetic alert service dog, built for Duke EGR 101.">
     <meta name="twitter:image" content="https://tommyc245.github.io/Tommy-Coen-Website/images/DukeCoursework/BarkitectsTeam.webp">
     <meta name="theme-color" content="#012169">
     <link rel="stylesheet" href="styles.css?v=9">
@@ -40,43 +40,40 @@
         <div class="detail-header">
             <div class="project-meta"><span class="project-year">2025</span><span class="project-tag">EGR 101</span></div>
             <h1>Bark-itects</h1>
-            <p class="project-subtitle">Wireless Alert System for a Diabetic Alert Dog — Duke University</p>
+            <p class="project-subtitle">Wireless Alert System for a Diabetic Alert Dog: Duke University</p>
         </div>
         <div class="detail-body">
             <div class="my-role">
                 <div class="my-role-label">My Role</div>
-                <p>4-person team. Did all CAD for the project and led assembly and iteration of the sensor/bringsel subsystem.</p>
+                <p>I did all CAD for our 4-person team, 3D printed both enclosures, and led assembly and iteration of the sensor/bringsel subsystem.</p>
             </div>
         </div>
         <div class="detail-images">
             <img src="images/DukeCoursework/BarkitectsTeam.webp" alt="Team at the Duke Engineering Showcase with the Bark-itects poster" class="detail-img-main" fetchpriority="high" width="1600" height="1200">
             <div class="detail-img-row">
-                <img src="images/DukeCoursework/BarkitectsBringsel.webp" alt="Augmented bringsel — dog interface" loading="lazy" decoding="async" width="1200" height="1600">
-                <img src="images/DukeCoursework/BarkitectsBracelet.webp" alt="Vibrating bracelet — handler interface" loading="lazy" decoding="async" width="1200" height="1600">
+                <img src="images/DukeCoursework/BarkitectsBringsel.webp" alt="Augmented bringsel: dog interface" loading="lazy" decoding="async" width="1200" height="1600">
+                <img src="images/DukeCoursework/BarkitectsBracelet.webp" alt="Vibrating bracelet: handler interface" loading="lazy" decoding="async" width="1200" height="1600">
             </div>
         </div>
         <div class="detail-body">
-
-            <p>
-                Bark-itects is a wireless alert system for a diabetic alert service dog. The dog bites down on an augmented bringsel, a pressure sensor sewn into a biothane exterior (the client's idea; I specified and integrated the material). The handler wears a bracelet that vibrates through a motor mounted in the enclosure wall. I CAD'd and 3D printed both enclosures.
-            </p>
-            <p>
-                Comms run over ESP-NOW between two Seeed XIAO ESP32C3 boards, no phone, no Wi-Fi. Both sides run on a 3.7V 380mAh battery (electrical's subsystem, not mine).
-            </p>
-            <h2>Failure &amp; iteration</h2>
-            <p>The sensor initially failed to trigger on a real bite. After adjusting it, ordinary dog movement caused false triggers. I led assembly and iteration of the sensor/bringsel subsystem through four design revisions to address the actuation threshold.</p>
-            <h2>Results vs. Requirements</h2>
-            <ul>
-                <li>Weight: 41g vs. &lt;317g target — pass</li>
+            <p>Our system lets a diabetic alert dog bite a pressure sensor in a bringsel to trigger a vibrating bracelet for its handler. I worked through four design revisions because the sensor first missed real bites, then triggered during ordinary movement.</p>
+            <h2>The build</h2><ul>
+                <li>Biothane exterior: the client's idea; I specified and integrated the material</li>
+                <li>Vibration motor mounted in the bracelet enclosure wall</li>
+                <li>ESP-NOW between two Seeed XIAO ESP32C3 boards, with no phone or Wi-Fi</li>
+                <li>3.7V 380mAh battery on each side, handled by the electrical subsystem team</li>
+            </ul>
+            <h2>Results vs. requirements</h2><ul>
+                <li>Weight: 41g vs. &lt;317g target, passed</li>
                 <li>Transmission reliability: approximately 91%</li>
-                <li>Battery life: 6.33 hr vs. 9 hr target — did not meet</li>
+                <li>Battery life: 6.33 hr vs. 9 hr target, did not meet</li>
                 <li>Water resistance (IPX5-6): untested</li>
                 <li>Bite resistance: ~1 year, estimated from client experience</li>
             </ul>
             <h2>Awards</h2>
-            <ul>
-                <li>Innovation in Design Award — Duke University</li>
-            </ul>
+                        <ul>
+                            <li>Innovation in Design Award: Duke University</li>
+                        </ul>
         </div>
 
         <div class="detail-img-gallery">
