@@ -19,7 +19,7 @@
     <meta name="twitter:description" content="Bark-itects — a wireless alert system for a diabetic alert service dog, built for Duke EGR 101.">
     <meta name="twitter:image" content="https://tommyc245.github.io/Tommy-Coen-Website/images/DukeCoursework/BarkitectsTeam.webp">
     <meta name="theme-color" content="#012169">
-    <link rel="stylesheet" href="styles.css?v=5">
+    <link rel="stylesheet" href="styles.css?v=6">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
 <body>
     <a href="#main" class="skip-link">Skip to content</a>
     <nav class="topbar">
-        <a href="index.html" class="topbar-home"><img src="images/avatar-40.png" alt="" width="20" height="20">Tommy Coen</a>
+        <a href="index.html" class="topbar-home"><img src="images/avatar-40.png" alt="" width="20" height="20" loading="lazy" decoding="async">Tommy Coen</a>
     </nav>
     <main class="page-content" id="main">
         <a href="duke-coursework.html" class="back-link">← Duke Coursework</a>
@@ -37,10 +37,10 @@
             <p class="project-subtitle">Wireless Alert System for a Diabetic Alert Dog — Duke University</p>
         </div>
         <div class="detail-images">
-            <img src="images/DukeCoursework/BarkitectsTeam.webp" alt="Team at the Duke Engineering Showcase with the Bark-itects poster" class="detail-img-main" fetchpriority="high">
+            <img src="images/DukeCoursework/BarkitectsTeam.webp" alt="Team at the Duke Engineering Showcase with the Bark-itects poster" class="detail-img-main" fetchpriority="high" width="1600" height="1200">
             <div class="detail-img-row">
-                <img src="images/DukeCoursework/BarkitectsBringsel.webp" alt="Augmented bringsel — dog interface" loading="lazy" decoding="async">
-                <img src="images/DukeCoursework/BarkitectsBracelet.webp" alt="Vibrating bracelet — handler interface" loading="lazy" decoding="async">
+                <img src="images/DukeCoursework/BarkitectsBringsel.webp" alt="Augmented bringsel — dog interface" loading="lazy" decoding="async" width="1200" height="1600">
+                <img src="images/DukeCoursework/BarkitectsBracelet.webp" alt="Vibrating bracelet — handler interface" loading="lazy" decoding="async" width="1200" height="1600">
             </div>
         </div>
         <div class="detail-body">
@@ -57,25 +57,30 @@
             <p>
                 4 design revisions to get the actuation threshold right. First the sensor wouldn't trigger on a real bite. Fixed that, and it started triggering on ordinary dog movement. Fixed that too.
             </p>
-            <h4>Results vs. Requirements</h4>
+            <h2>Results vs. Requirements</h2>
             <ul>
                 <li>Weight: 41g vs. &lt;317g target — pass</li>
-                <li>Transmission reliability: 91.67% over 100 trials</li>
+                <li>Transmission reliability: approximately 91%</li>
                 <li>Battery life: 6.33 hr vs. 9 hr target — did not meet</li>
                 <li>Water resistance (IPX5-6): untested</li>
                 <li>Bite resistance: ~1 year, estimated from client experience</li>
             </ul>
-            <h4>Awards</h4>
+            <h2>Awards</h2>
             <ul>
                 <li>Innovation in Design Award — Duke University</li>
             </ul>
         </div>
 
         <div class="detail-img-gallery">
-            <img src="images/DukeCoursework/BarkitectsEnclosure1.webp" alt="Bracelet enclosure open, showing battery and XIAO ESP32C3" loading="lazy" decoding="async">
-            <img src="images/DukeCoursework/BarkitectsEnclosure2.webp" alt="Enclosure electronics closeup" loading="lazy" decoding="async">
-            <img src="images/DukeCoursework/BarkitectsSensor.webp" alt="Pressure sensor strip and biothane exterior" loading="lazy" decoding="async">
+            <img src="images/DukeCoursework/BarkitectsEnclosure1.webp" alt="Bracelet enclosure open, showing battery and XIAO ESP32C3" loading="lazy" decoding="async" width="1200" height="1600">
+            <img src="images/DukeCoursework/BarkitectsEnclosure2.webp" alt="Enclosure electronics closeup" loading="lazy" decoding="async" width="1200" height="1600">
+            <img src="images/DukeCoursework/BarkitectsSensor.webp" alt="Pressure sensor strip and biothane exterior" loading="lazy" decoding="async" width="1200" height="1600">
         </div>
+        <nav class="project-nav" aria-label="More projects">
+            <a href="duke-coursework.html">&larr; Duke Coursework</a>
+            <a href="index.html#projects">All projects &rarr;</a>
+        </nav>
+
     </main>
     <footer><p>Tommy Coen &middot; Duke ME '29</p></footer>
 </body>
