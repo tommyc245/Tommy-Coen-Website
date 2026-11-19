@@ -124,7 +124,7 @@ section("ENGINEERING EXPERIENCE")
 story.append(row("<b>Duke AERO (Rocketry Team)</b>", "Durham, NC"))
 story.append(row("<i>Structures Lead</i>", "<i>July 2026 - Present</i>"))
 bullet(
-    "Lead ~12 active structures members developing a 30,000 ft student-researched "
+    "Led ~12 active structures members developing a 30,000 ft student-researched "
     "and developed (SRAD) rocket for IREC 2027; rebuilt the team from 3 returning members"
 )
 bullet(
@@ -132,18 +132,18 @@ bullet(
     "including a body tube, nose cone, fin can, and coupler"
 )
 bullet(
-    "Commissioned the team's first filament winder; designed a 3:1 gear drive in "
+    "Brought the team's first filament winder into service; designed a 3:1 gear drive in "
     "Onshape to replace a slipping belt drive and upgraded the motor to an "
     "8.2 N&middot;m NEMA 34 to resolve stalling, among numerous other modifications"
 )
 bullet(
-    "Upgraded the control board and migrated from Marlin to Klipper; improved "
-    "tow-placement consistency with fewer gaps and produced dry- and wet-wound test tubes"
+    "Upgraded the winder's control board and motion-control firmware to improve tow "
+    "placement; produced dry- and wet-wound test tubes with fewer gaps and more consistent spacing"
 )
 story.append(Spacer(1, 2))
 story.append(row("<i>Structures &amp; Solid Propulsion Member</i>", "<i>2025 - 2026</i>"))
 bullet(
-    "Machined a 6061 aluminum nozzle casing and programmed lightening features "
+    "Machined a 6061 aluminum nozzle casing and programmed weight-saving features "
     "and a fourth-axis bolt-hole pattern; hardware survived full-duration static "
     "hot fire and flight. Team placed 3rd in the 30,000 ft SRAD propulsion category "
     "at IREC 2026"
