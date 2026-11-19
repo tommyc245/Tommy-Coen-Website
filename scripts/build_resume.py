@@ -3,7 +3,9 @@
 Requires reportlab. Content lives here so future updates remain editable.
 """
 
+from hashlib import sha256
 from pathlib import Path
+import re
 
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER
@@ -199,4 +201,15 @@ SimpleDocTemplate(
     topMargin=29, bottomMargin=29, title="Thomas Coen - Resume",
     author="Thomas Coen", subject="Mechanical Engineering Resume",
 ).build(story)
+
+# Refresh both the embedded PDF and download when the resume changes.
+page = ROOT / "resume.html"
+version = sha256(OUTPUT.read_bytes()).hexdigest()[:12]
+html = page.read_text(encoding="utf-8")
+html = re.sub(
+    r'((?:href|src)="resume\.pdf)(?:\?v=[^"]*)?(")',
+    rf'\1?v={version}\2',
+    html,
+)
+page.write_text(html, encoding="utf-8")
 print(f"Built {OUTPUT}")
