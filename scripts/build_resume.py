@@ -173,6 +173,10 @@ bullet(
 )
 bullet("Designed and machined Typhoon's intake and pivot (2024)")
 bullet("Coordinated 5 subteams and 35 members through robot design and construction (2025)")
+bullet(
+    "Initiated Plop, an off-season robot built by a young, inexperienced team, and led "
+    "its design, including adapting the Grey-T elevator; robot competed at Madtown Throwdown (2023)"
+)
 
 story.append(Spacer(1, 5))
 story.append(row("<b>Duke EGR 121, Sunflower Seed Sheller</b>", "Durham, NC"))
